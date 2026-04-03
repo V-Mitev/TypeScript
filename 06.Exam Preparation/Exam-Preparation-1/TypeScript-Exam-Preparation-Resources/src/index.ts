@@ -2,7 +2,6 @@ import { MenuManager } from './menu-manager';
 import { WelcomeSnack, MainCourse, Dessert } from './menu-item-types';
 import { Client } from './models';
 
-
 const menuManager = new MenuManager();
 
 // --- Test 1: Add Menu Items ---
@@ -10,9 +9,9 @@ const welcomeSnack = new WelcomeSnack(1, 'Garlic Bread', 50, true);
 const mainCourse = new MainCourse(2, 'Steak', 300, 20, 25);
 const dessert = new Dessert(3, 'Chocolate Cake', 150, true, 10);
 
-console.log(menuManager.addMenuItem(welcomeSnack)); 
-console.log(menuManager.addMenuItem(mainCourse));   
-console.log(menuManager.addMenuItem(dessert));     
+console.log(menuManager.addMenuItem(welcomeSnack));
+console.log(menuManager.addMenuItem(mainCourse));
+console.log(menuManager.addMenuItem(dessert));
 
 // --- Test 2: Register Clients ---
 // const client1: Client = { name: 'Alice', phone: '123456' };
@@ -38,11 +37,9 @@ console.log(menuManager.addMenuItem(dessert));
 // console.log(`MainCourse final price in EUR: ${mainCourse.finalPrice} EUR`);
 // console.log(`WelcomeSnack final price (should be undefined): ${welcomeSnack.finalPrice}`);
 
-
 export {
     MenuManager,
     WelcomeSnack,
- MainCourse,
- Dessert,
-
+    MainCourse,
+    Dessert
 };
